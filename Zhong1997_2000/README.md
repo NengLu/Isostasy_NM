@@ -20,7 +20,7 @@ An analytic model coupling crust and mantle with a Maxwellian rheology is formul
 
 #### Model Results:
 
-- FreeSurface_DefTop
+- FreeSurface_DefTop 
 
   ```python
   # Create boundary condition
@@ -36,7 +36,7 @@ An analytic model coupling crust and mantle with a Maxwellian rheology is formul
 
   
 
-- FreeSurface_DefTop&Moho
+- FreeSurface_DefTop&Moho (see details in _freesurface_moho.py)
 
       self._conditions = uw.conditions.DirichletCondition(
               variable=self.TField,
@@ -57,11 +57,15 @@ Crustal shortening is applied through a horizontal velocity boundary conditions 
 
 
 
+#### Model Setups:
+
+
+
 <img src="Zhong2000Covergence_Hpc/images/Modelsetup.png" alt="" width="400" height="">
 
 <img src="Zhong2000Covergence_Hpc/images/Modelsetup0.png" alt="" width="400" height="">
 
-Model Results:
+#### Model Results:
 
 From the analytical solutions:
 
